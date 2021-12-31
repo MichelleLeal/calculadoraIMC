@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  color: #2c3e50;
+  background-color: #e8f2e9;
+  background-image: url("fundo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.calc-imc {
+  padding: 1em;
+  font-family: 'Nunito', sans-serif;
+  background: #f6f2d8;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.imagem {
+    width: 60px;
+    display: block;
+    margin: 10px auto 0;
+}
+
+#imc {
+    background: #f6f2d8;
+    text-align: center;
+}
+@media (min-width: 500px) {
+  .calc-imc {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 500px;
+    width: 100%;
+    padding: 1em;
+  }
+}
+
+.calc-imc h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.3em;
+}
+
+.form label,
+.form button {
+  margin-top: 1em;
+}
+
+.form input,
+.form button {
+  font-size: inherit;
+  font-family: inherit;
+  width: 100%;
+  padding: 0.2em;
+  outline: none;
+  border: none;
+}
+
+.form button {
+  background: linear-gradient(#a8e063, #56ab2f);
+  cursor: pointer;
+  border-radius: 5em;
+  width: 50%;
+  border: none;
+  box-shadow: rgb(50 50 93 / 25%) 0px 2px 5px -1px, rgb(0 0 0 / 30%) 0px 1px 3px -1px;
+  padding: 10px;
+  font-weight: bold;
+  color: #fefefe;
+}
+
+.form button:hover {
+  filter: opacity(0.8);
+}
+
+.form button:active {
+  background-color: #FFEFFF;
+  color: #000;
+  filter: opacity(0.8);
+}
+
+
+.message {
+  display: block;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-size: 1.2rem;
+  font-style: italic;
+  position: fixed;
+  box-shadow: 0 0 4px #333;
+}
+
+@media screen and (max-width: 500px) {
+    .body {
+        background-size: cover;
+    }
+    
+    .message {
+        bottom: 0;
+    }
+
+    .calc-imc h1 {
+        margin-top: 27px;
+    }
+}
+
+.sucess {
+  background-color: #2ecc71;
+  color: #fff;
+}
+
+.warning {
+  background-color: #e67e22;
+  color: #fff;
+}
+
+.alert {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.danger {
+  background-color: #c0392b;
+  color: #fff;
+}
